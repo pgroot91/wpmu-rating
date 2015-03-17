@@ -1,0 +1,11 @@
+.manage-column.column-author.sortable.desc {
+  width: 30%;
+}
+.approve_rating a {
+  color: #006505;
+  cursor:pointer;
+}
+.unapprove_rating a {
+  color: #d98500;
+  cursor: pointer;
+}
