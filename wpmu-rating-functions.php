@@ -9,9 +9,9 @@ function add_lates_jquery() {
 
 function wp_ratings_scripts() {
 
-	/*wp_register_style('wpmu-bootstrap', plugins_url( 'css/bootstrap.min.css', __FILE__ ), false );
+	wp_register_style('wpmu-bootstrap', plugins_url( 'css/bootstrap.min.css', __FILE__ ), false );
 	wp_enqueue_style('wpmu-bootstrap');
-*/
+
 	wp_register_style('wpmu-bootstrap-rating', plugins_url( 'css/star-rating.min.css', __FILE__ ) );
 	wp_enqueue_style('wpmu-bootstrap-rating');
 
@@ -28,7 +28,7 @@ function wp_ratings_scripts() {
 	wp_enqueue_script( 'wpmu-script-validator-tooltip' );
 
 	//load js files in footer
-	//wp_enqueue_script( 'wp-bootstrap-name', plugins_url( 'js/bootstrap.min.js', __FILE__ ), array(), '1.0.0', true );
+	wp_enqueue_script( 'wp-bootstrap-name', plugins_url( 'js/bootstrap.min.js', __FILE__ ), array(), '1.0.0', true );
 	wp_enqueue_script( 'wp-bootstrap-rating',  plugins_url( 'js/star-rating.min.js', __FILE__ ), array('bootstrap-name'), '1.0.0', true );
 
 	wp_enqueue_script( 'wp-custom-rating-name', plugins_url( 'js/custom-rating.js', __FILE__ ), array(), '1.0.0', true );
